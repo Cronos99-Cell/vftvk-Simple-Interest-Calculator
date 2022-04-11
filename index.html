@@ -1,16 +1,21 @@
+<!DOCTYPE html>
 <html>
     <head>
+    <title>"Simple Interest Calculator"</title>	
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        Amount <input type="number"  id="principal">  <br/><br/>
+        Rate <input type=range <span id="rate_val">10.25%</span>  id="rate" <span id="min">1</span><span id="max">20</span> <span id="step">0.25</span> <span id="default_value">10.25</span> value=10.25></span><br/><br/>
+        No. of Years <input type="number"  id="years">  <br/><br/>
+        Interest <span id="min">1</span><span id="max">20</span> <span id="step">0.25</span>
 
-        <button onclick="compute()">Compute</button>
+        <button onclick="compute()">Compute Interest</button>
+	<span id="result"></span>
+        </div>
     </body>
-</html>
+</html> 
